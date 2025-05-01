@@ -8,7 +8,7 @@ export default function AsciiLogo({ small = false }: AsciiLogoProps) {
     : "font-mono text-center text-violet-600 text-lg md:text-xl lg:text-2xl"
 
   return (
-    <pre className={logoClass}>
+    <div className={logoClass}>
       {`
  █████╗ ███████╗ ██████╗██╗██╗    ███████╗ ██████╗  ██████╗██╗ █████╗ ██╗     
 ██╔══██╗██╔════╝██╔════╝██║██║    ██╔════╝██╔═══██╗██╔════╝██║██╔══██╗██║     
@@ -17,6 +17,6 @@ export default function AsciiLogo({ small = false }: AsciiLogoProps) {
 ██║  ██║███████║╚██████╗██║██║    ███████║╚██████╔╝╚██████╗██║██║  ██║███████╗
 ╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝╚═╝    ╚══════╝ ╚═════╝  ╚═════╝╚═╝╚═╝  ╚═╝╚══════╝
 `}
-    </pre>
+    </div>
   )
 }
